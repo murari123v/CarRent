@@ -1,0 +1,441 @@
+:root{
+    --black:#333;
+    --white:#FFF;
+    --light-color:#666;
+    --main-color:#1e69d9;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    text-decoration: none;
+}
+
+html{
+    font-size: 63.5%;
+}
+.header{
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5%;
+    box-shadow: .1rem .5rem 1rem #999;
+    z-index: 100;
+}
+.header .logo h1{
+    font-size: 3rem;
+    color: var(--black);
+    text-transform: capitalize;
+}
+.header .logo span{
+    color: var(--main-color);
+    text-transform: capitalize;
+}
+.header .navbar a{
+    font-size: 1.5rem;
+    color: var(--black);
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0 1rem;
+    padding: 1rem;
+}
+.header .navbar a:hover{
+    background-color: var(--main-color);
+    color: var(--white);
+}
+.header .btn{
+    background-color: var(--main-color);
+    color: var(--white);
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    box-shadow: .1rem .5rem 1rem #999;
+}
+.header .btn:hover{
+    border-radius: 0;
+    scale: 1.2;
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 1rem;
+    width: 100%;
+}
+.image {
+    width: 50%;
+}
+.image img{
+    height: 35rem;
+    width: 100%;
+    object-fit: cover;
+}
+.home .content{
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+    padding: 1rem;
+    padding-left: 5rem;
+    width: 50%;
+}
+.home .content h1{
+    font-size: 4rem;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+.home .content span{
+    font-size: 3rem;
+    color: var(--main-color);
+}
+.home .content p{
+    color: var(--light-color);
+    line-height: 2;
+    text-transform: lowercase;
+    font-size: 1.3rem;
+    margin: 2rem 0;
+}
+.home .content .btn{
+    background-color: var(--main-color);
+    color: var(--white);
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    padding: 1rem 3rem;
+    border-radius: 0;
+    box-shadow: .1rem .5rem 1rem #999;
+}
+.home .content .btn:hover{
+    padding-right: 5rem;
+}
+
+.cars{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding: 3rem 5%;
+    min-height: 100vh;
+}
+.cars span{
+    color: var(--main-color);
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+.cars h3{
+    color: var(--black);
+    font-size: 3rem;
+    text-transform:uppercase;
+}
+
+.cars p{
+    color: var(--light-color);
+    font-size: 1.3rem;
+    text-transform:uppercase;
+    margin-bottom: 1rem;
+}
+.cars .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+.cars .box-container .box{
+    position: relative;
+
+}
+.cars .box-container .box:hover img{
+    scale: 1.1;
+}
+.cars .box-container .box:hover a{
+    background-color: var(--main-color);
+}
+.cars .box-container .box img{
+    position: relative;
+    height: 20rem;
+    width: 30rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: .1rem .5rem 1rem #999;
+}
+.cars .box-container .box a{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 5%;
+    gap: 1rem;
+}
+.about .content{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+.about .content span{
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.about .content{
+    width: 50%;
+}
+.about .content h3{
+    color:black;
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+.about .content p{
+    color:var(--light-color);
+    text-transform: lowercase;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    line-height: 2;
+}
+.about .content a{
+    color:var(--white);
+    background-color: var(--main-color);
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    box-shadow: .1rem .5rem 1rem #333;
+}
+.about .content a:hover{
+    border-radius: 3rem;
+}
+.reviews{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding: 3rem 5%;
+}
+.reviews span{
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.reviews p{
+    color:var(--black);
+    text-transform: lowercase;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    text-align: center;
+}
+.reviews .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+.reviews .box-container .box{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 30rem;
+    background-color: var(--main-color);
+}
+.reviews .box-container .box img{
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: .1rem .5rem 1rem #999;
+    margin-bottom: 1rem;
+    border: .1rem solid var(--white);
+}
+.reviews .box-container .box h3{
+    color: var(--white);
+    font-size: 1.6rem;
+    text-transform: capitalize;
+}
+.reviews .box-container .box p{
+    font-size: 1.2rem;
+    color: #EEEEEE;
+    text-transform: lowercase;
+    margin: 1rem 0;
+}
+.reviews .box-container .box .stars i{
+    color: gold;
+    font-size: 1.5rem;
+}
+.reviews .box-container .box:hover{
+    background-color: var(--black);
+    border-radius: 3rem;
+    cursor: pointer;
+}
+.reviews .box-container .box:hover img{
+    scale: 1.2;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background-color: var(--black);
+    padding: 3rem;
+    
+}
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+.footer .box-container .box{
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer .box-container .box i{
+    color: #EEEEEE;
+    font-size: 2rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+.footer .box-container .box i:hover{
+    color: var(--main-color);
+}
+.footer .box-container .box .logo h1{
+    font-size: 3rem;
+    color: black;
+    text-transform: capitalize;
+}
+.footer .box-container .box .logo span{
+    color: var(--main-color);
+}
+.footer .box-container .box h3{
+    font-size: 2rem;
+    color: var(--white);
+    text-transform: uppercase;
+}
+.footer .box-container .box a{
+    font-size: 1.2rem;
+    color: #999;
+    text-transform: capitalize;
+}
+
+.footer .box-container .box a:hover{
+    color: var(--main-color);
+    padding-left: 2rem;
+    text-decoration: underline;
+}
+.footer .credit span{
+    color: var(--white);
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    margin: 2rem 0;
+}
+
+@media(max-width:990px){
+    html{
+        font-size: 55%;
+    }
+}
+@media(max-width:768px){
+    html{
+        font-size: 50%;
+    }
+    .home{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        margin-top: 5rem;
+    } 
+    .home .image{
+        width: 100%;
+    }
+    .home .content{
+        width: 100%;
+    }
+    .about{
+        flex-wrap: wrap;
+    }
+
+    .about img{
+        height: 29rem;
+    }
+    .about .content{
+        width: 100%;
+    }
+}
+
+@media(max-width:450px){
+    html{
+        font-size: 49%;
+    }
+    .home{
+        margin-top: 10rem;
+    }
+    .home .image img{
+        height: 29rem;
+    }
+    .home .content h1{
+        font-size: 4rem;
+    }
+    .home .content h1 span{
+        font-size: 3.5rem;
+    }
+    .header .btn{
+        display: none;
+    }
+    .header{
+        position: relative;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 8em;
+    }
+    .cars{
+        padding: 3rem 1%;
+    }
+    .cars p{
+        width: 15rem;
+        text-align: center;
+    }
+    .cars .box-container .box img{
+        height: 25rem;
+        width: 35rem;
+    }
+}
